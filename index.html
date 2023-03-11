@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson02_js</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="task1">
+    Перепишіть if з використанням оператора "?": <br>
+    if(a + b < 4) { <br>
+    result = 'Мало'; <br>
+    }else { <br>
+    result = 'Багато'; <br>
+    } <br>
+    <br>
+    let little = 'Мало'; <br>
+    let many = 'Багато'; <br>
+    <br>
+    1. Мало: <br>
+    let one = 1, two = 2, three = 0; <br>
+    three = a + b < 4 ? little : many; <br>
+    <br>
+    document.write(three); <br>
+    <br>
+    2. Багато: <br>
+    <br>
+    let four = 1, five = 2, six = 0; <br>
+    six = a + b < 4 ? little : many; <br>
+    document.write(six);
+
+    <script src="./script/task1.js"></script>
+  </div>
+  <div class="task2">
+    if (login == 'Вася') { <br>
+      message = 'Привет'; <br>
+    } else if (login == 'Директор') { <br>
+      message = 'Здравствуйте'; <br>
+    } else if (login == '') { <br>
+      message = 'Нет логина'; <br>
+    } else { <br>
+      message = ''; <br>
+    } <br>
+    <br>
+    var login = prompt('Ведіть логин:'); <br>
+    var message; <br>
+    <br>
+    message = login == ('Вася') ? alert('Привіт') : (prompt('Ведіть логин:')(login == 'Директор')) ? alert('Здравствуйте') : (prompt('Ведіть логин:')(login == '')) ? alert('Немає логіна') : alert('Не вірно'); <br>
+    <br>
+    alert(message);
+    <script src="./script/task2.js"></script>
+  </div>
+  <div class="task4">
+    <script src="./script/task4.js"></script>
+  </div>
+</body>
+</html>
